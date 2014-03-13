@@ -16,8 +16,8 @@ class calculus:
         the width of each rectangle, the height of each rectangle for a given
         'step' is calculated by calling the passed in function 'f'.
         """
-        def integrate(f, startInterval = 0, endInterval=0, accuracyPoint = 1):
-            steps = accuracyPoint * 100000
+        def integrate(f, startInterval = 0, endInterval=0, epsilon = 1):
+            steps = accuracyPoint * 1000000
             graphIntervalDistance = abs(startInterval - endInterval)
             rectangleInterval = graphIntervalDistance / steps
             
@@ -31,7 +31,7 @@ class calculus:
                 
             return area
             
-        def limit(f, close=100):
+        def limit(f, epsilon=100):
             
         def derivative(f, x=0, y=0):
             
