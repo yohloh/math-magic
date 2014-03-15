@@ -27,7 +27,7 @@ body {
 	text-align: center;
 }
 #nav li {
-	display: inline;
+	display: inline-block;
 	white-space: nowrap;
 }
 #nav li a{
