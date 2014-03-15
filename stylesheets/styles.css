@@ -6,7 +6,7 @@
 
 /* body */
 body {
-	
+	margin: 0 auto;
 }
 
 /* navigation bar stuling */
@@ -23,6 +23,8 @@ body {
 	height:55px;
 	list-style: none;
 	background-color: white;
+
+	text-align: center;
 }
 #nav li {
 	display: inline;
@@ -30,8 +32,9 @@ body {
 }
 #nav li a{
 	/*padding used to properly put the list elements in the right place*/
-	padding-top:  21px;
+	/*padding-top:  21px;
 	padding-right: 20px;
+	*/
 	color: #A9A9A9;
 
 	text-decoration: none;
