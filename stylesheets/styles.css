@@ -1,12 +1,14 @@
 /* header in nav bar */
 #nav li h1 {
-	background-color: 
+	
 }
 
 
 /* body */
 body {
 	margin: 0 auto;
+
+	background-color: gray;
 }
 
 /* navigation bar stuling */
@@ -14,35 +16,50 @@ body {
 	position: absolute;
 
 	/*required so the nav bar can properly "fit" the page*/
-	margin-top: -8px;
-	margin-left: -7px;
+	margin-top: 0px;
 	width: 97%;
 
 	box-shadow: 0px 3px 3px #EDEDED;
 
-	height:55px;
+	height:45px;
 	list-style: none;
 	background-color: white;
-
-	text-align: center;
+	white-space: nowrap;
 }
 #nav li {
-	display: inline-block;
-	white-space: nowrap;
+	display: inline;
 }
 #nav li a{
 	/*padding used to properly put the list elements in the right place*/
-	/*padding-top:  21px;
 	padding-right: 20px;
-	*/
 	color: #A9A9A9;
 
+	vertical-align: middle;
+
 	text-decoration: none;
-	display: inline-block;
 }
 #nav li a:hover{
 	color: #C7C7C7;
 }
 #nav li a:link{
 	color: black;
+}
+
+/* The body of the page */
+#p{
+	margin-top: 100px;
+	position: absolute;	
+	background-color: white;
+	margin-left: 150px;
+	width: 1000px;
+}
+#p p{
+	color: black;
+	background-color: white;
+
+    opacity: 0;
+
+    height: 300px;
+
+
 }
