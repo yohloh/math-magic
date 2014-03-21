@@ -8,15 +8,16 @@
 body {
 	margin: 0 auto;
 
-	background-color: gray;
+	background-color: #f1f1f1;
 }
 
 /* navigation bar stuling */
 #nav {
-	position: absolute;
+	z-index: 100;
+	position: fixed;
 
 	/*required so the nav bar can properly "fit" the page*/
-	margin-top: 0px;
+	margin-top: -15px;
 	width: 97%;
 
 	box-shadow: 0px 3px 3px #EDEDED;
@@ -47,19 +48,20 @@ body {
 
 /* The body of the page */
 #p{
-	margin-top: 100px;
-	position: absolute;	
+	z-index: 4;	
 	background-color: white;
-	margin-left: 150px;
-	width: 1000px;
+	width: 1150px;
+	height: 1300px;
+
+	/*center */
+	margin-left: auto;
+	margin-right: auto;
 }
 #p p{
 	color: black;
 	background-color: white;
 
     opacity: 0;
-
-    height: 300px;
 
 
 }
