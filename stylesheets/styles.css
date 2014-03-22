@@ -153,8 +153,8 @@ Ad1, main etc. are the "boxes" to show off each product feature
 /* mainfullBack image is an outside div to allow full span for image instead of being trapped in inner border 
 	The div is located right next to the outer div to allow for full span
 */
-#mainfullBack{
-	background-image: url("../Resources/deskBig.jpg");
+#mainfullBackImage{
+	background-image: url("../Resources/rsz_deskbig.jpg");
 	height: 505px;
 	width: 100%;
 	background-repeat: no-repeat;
