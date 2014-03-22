@@ -69,11 +69,13 @@ Ad1, main etc. are the "boxes" to show off each product feature
 #outer{
 	z-index: 1;
 	width: 100%;
+	height: 1300px;
+	background-color: #F8F8F8 ; 
 }
 /* provides the centering of the content */
 #outer #inner{
 	width: 1000px;
-	height: 1600px;
+	height: 1300px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -134,12 +136,11 @@ Ad1, main etc. are the "boxes" to show off each product feature
 	border-top-color: transparent;
 	border-left-color: transparent;
 	border-right-color: transparent;
-	border-left-color: transparent;
-	
+	border-left-color: transparent;	
 }
 /*******************  Specific Targeting *******************************/
 /* main box specific targeting */
-#main{
+#main{ 
 	margin-top: 5px;
 	height: 500px !important;
 }
@@ -162,6 +163,7 @@ Ad1, main etc. are the "boxes" to show off each product feature
 
 /* ad1 box specific targeting */
 #ad1{
+	background-color: white;
 }
 #ad1 h2{
 	text-align: right;
@@ -173,7 +175,8 @@ Ad1, main etc. are the "boxes" to show off each product feature
 }
 
 /*ad2 box specific targeting */
-#inner #content #ad2{
+#ad2{
+	background-color: white;
 }
 #ad2 h2{
 }
