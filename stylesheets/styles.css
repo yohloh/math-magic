@@ -7,23 +7,33 @@
 /* body */
 body {
 	margin: -20px;
-
-	/*background-color: #f1f1f1;*/
 }
 
 /************************************************** navigation bar *************************************************/
-#nav {
+#navBar {
 	z-index: 2;
 
 	/*required so the nav bar can properly "fit" the page*/
 	width: 100%;
-	box-shadow: 0px 0.5px 2px #e9e9e9;
+	
 	height:60px;
 	list-style: none;
-	background-color: white;
 	white-space: nowrap;
 }
+#nav{
+	width: 1000px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#nav ul{
+
+}
 #nav li {
+	margin-top: 20px;
+	font-family: "Alegreya", "Open Sans" sans-serif;
+	font-weight: 300;
 	display: inline-block;
 }
 #nav li a{
@@ -80,11 +90,33 @@ The cotent div is for content.
 	border-right-color: transparent;
 	border-left-color: transparent;
 }
-#main img{
-	margin-left: 700px
+/* target all headers in the content area */
+#inner #content h2{
+	font-family:"Alegreya", "Open Sans", sans-serif;
+	font-weight: 300;
+	color: #989898;
+
+	margin-top: 70px;
+	margin-left: 35px;
 }
-#inner #content #ad1{
-	height: 300px;
+/* target all paragraphs */
+#inner #content p{
+	font-family: "Alegreya", "Open Sans", sans-serif;
+	font-weight: 300;
+	color: #989898;
+
+	margin-left: 35px;
+	margin-top: 50px;
+}
+/* target all links */
+#inner #content a{
+	font-family: "Alegreya", "Open Sans", sans-serif;
+	font-weight: 300;
+	margin-left: 35px;
+}
+/* target all divs */
+#inner #content div{
+	height: 350px;
 	width: 1000px;
 
 	border: 1px solid;
@@ -94,30 +126,23 @@ The cotent div is for content.
 	border-right-color: transparent;
 	border-left-color: transparent;
 }
+
+/* main box specific targeting */
+#main h2{
+}
+#inner #content #ad1{
+}
+/* ad1 box specific targeting */
 #ad1 h2{
-	position: auto;
-	margin-left: 100px;
 	text-align: right;
+	margin-right: 35px;
 }
 #ad1 p{
 	text-align: right;
+	margin-right: 35px;
 }
-#ad1 img{
-	margin-left: 40px;
-}
+/*ad2 box specific targeting */
 #inner #content #ad2{
-	height: 300px;
-	width: 1000px;
-
-	/*border: 1px solid;
-	border-bottom-color: #E0E0E0;
-	border-top-color: transparent;
-	border-left-color: transparent;
-	border-right-color: transparent;
-	border-left-color: transparent;
-	*/
 }
-#ad2 img{
-	margin-left: 600px;
+#ad2 h2{
 }
-
