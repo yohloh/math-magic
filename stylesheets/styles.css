@@ -6,29 +6,25 @@
 
 /* body */
 body {
-	margin: 0 auto;
+	margin: -20px;
 
-	background-color: #f1f1f1;
+	/*background-color: #f1f1f1;*/
 }
 
-/* navigation bar stuling */
+/************************************************** navigation bar *************************************************/
 #nav {
-	z-index: 100;
-	position: fixed;
+	z-index: 2;
 
 	/*required so the nav bar can properly "fit" the page*/
-	margin-top: -15px;
-	width: 97%;
-
-	box-shadow: 0px 3px 3px #EDEDED;
-
-	height:45px;
+	width: 100%;
+	box-shadow: 0px 0.5px 2px #e9e9e9;
+	height:60px;
 	list-style: none;
 	background-color: white;
 	white-space: nowrap;
 }
 #nav li {
-	display: inline;
+	display: inline-block;
 }
 #nav li a{
 	/*padding used to properly put the list elements in the right place*/
@@ -46,22 +42,82 @@ body {
 	color: black;
 }
 
-/* The body of the page */
-#p{
-	z-index: 4;	
-	background-color: white;
-	width: 1200px;
-	height: 1300px;
 
-	/*center */
+/************************************************** Page Body **************************************************/
+/*
+Ad objects' (the block objects, including main div) widths are meant to fill the whole width of the containg
+inner div. Thus, when changing the width of the innter div, make sure you change the width of the inner content boxes.
+
+The inner div allows the centering of the main content.
+The outer div fills up whole page and contains the inner div. 
+
+The cotent div is for content. 
+*/
+#outer{
+	z-index: 1;
+	width: 100%;
+	height: 1600px;
+}
+
+#outer #inner{
+	width: 1000px;
+	height: 1600px;
 	margin-left: auto;
 	margin-right: auto;
 }
-#p p{
-	color: black;
-	background-color: white;
-
-    opacity: 0;
-
-
+#inner #content{
+	position: absolute;
+	margin-top: 50px;
 }
+#inner #content #main{
+	height: 300px;
+	width: 1000px;
+
+	border: 1px solid;
+	border-bottom-color: #E0E0E0;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+}
+#main img{
+	margin-left: 700px
+}
+#inner #content #ad1{
+	height: 300px;
+	width: 1000px;
+
+	border: 1px solid;
+	border-bottom-color: #E0E0E0;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+}
+#ad1 h2{
+	position: auto;
+	margin-left: 100px;
+	text-align: right;
+}
+#ad1 p{
+	text-align: right;
+}
+#ad1 img{
+	margin-left: 40px;
+}
+#inner #content #ad2{
+	height: 300px;
+	width: 1000px;
+
+	/*border: 1px solid;
+	border-bottom-color: #E0E0E0;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	*/
+}
+#ad2 img{
+	margin-left: 600px;
+}
+
