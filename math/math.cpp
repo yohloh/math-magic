@@ -1,3 +1,5 @@
+#include <vector>
+using namespace std;
 class Math{
   template <typename t> add(a, b){
     return a + b;
@@ -20,5 +22,14 @@ class Math{
     for(int i = 0; i < n; i++){
       value *= a;
     }
+  }
+  
+  template<typename t>
+ double GetMean(vector <t>numbers){
+	t sum = 0;
+	for(int i = 0; i<numbers.size(); i++){
+	 sum += numbers[i];
+	}
+	return sum/numbers.size();
   }
 }
