@@ -1,23 +1,23 @@
 #include <vector>
 using namespace std;
 class Math{
-  template <typename t> add(a, b){
+  template <typename t> add(t a, t b){
     return a + b;
   }
   
-  template <typename t> subract(a, b){
+  template <typename t> subract(t a, t b){
     return a - b;
   }
   
-  template <typename t> divide(a, b){
+  template <typename t> divide(t a, t b){
     return a / b;
   }
   
-  template <typename t> multiply(a, b){
+  template <typename t> multiply(t a, t b){
     return a * b;
   }
   
-  template <typename t> exponent(a, n){
+  template <typename t> exponent(t a, t n){
     t value = 0;
     for(int i = 0; i < n; i++){
       value *= a;
