@@ -1,5 +1,4 @@
 class Math{
-
   template <typename t> add(a, b){
     return a + b;
   }
@@ -12,7 +11,14 @@ class Math{
     return a / b;
   }
   
-  remplate <typename t> multiply(a, b){
+  template <typename t> multiply(a, b){
     return a * b;
+  }
+  
+  template <typename t> exponent(a, n){
+    t value = 0;
+    for(int i = 0; i < n; i++){
+      value *= a;
+    }
   }
 }
