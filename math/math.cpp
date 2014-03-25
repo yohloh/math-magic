@@ -23,12 +23,20 @@ class Math{
       value *= a;
     }
   }
-  
-  template<typename t>
- double GetMean(vector <t>numbers){
+ 
+ /*
+ Takes in a vector of numbers and finds the mean.
+ 
+ Input: A vector of numbers
+ 
+ Returns: The mean of the numbers (no decimals if not floating point)
+ */
+ template<typename t>
+ double getMean(vector <t>numbers){
 	t sum = 0;
-	for(int i = 0; i<numbers.size(); i++){
-	 sum += numbers[i];
+	vector<t>::iterator numberIterator
+	for(vector<t>::iterator numberIterator = numbers.begin(); numberIterator < numbers.end(); numberIterator++){
+	 sum += *numberIterator
 	}
 	return sum/numbers.size();
   }
