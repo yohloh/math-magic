@@ -111,7 +111,7 @@ Ad1, main etc. are the "boxes" to show off each product feature
 	font-family: "Alegreya", "Open Sans", sans-serif;
 	font-weight: 300;
 	margin-left: 35px;
-
+	border-radius: 10px;
 }
 #inner #content a button{
 	margin-top: 20px;
