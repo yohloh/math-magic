@@ -26,7 +26,7 @@ class Math{
  double GetMean(vector <t>numbers){
 	t sum = 0;
 	for(int i = 0; i<numbers.size(); i++){
-	 	sum += numbers[i];
+	 sum += numbers[i];
 	}
 	return sum/numbers.size();
   }
