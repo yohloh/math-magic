@@ -5,8 +5,8 @@ two points. In otherwords, it retunrs the slope of the interval between two poin
 Returns the slope for a line based on the 2 points given.
 */
 template <typename t> findSlope(x1, y1, x1, x2){
-        deltaY = y1 - y2;
-        deltaX = x1 - x2;
+        t deltaY = y1 - y2;
+        t deltaX = x1 - x2;
         
         return deltaX / deltaY
 }
