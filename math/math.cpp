@@ -1,3 +1,5 @@
+#include <vector>
+using namespace std;
 class Math{
   template <typename t> add(a, b){
     return a + b;
